@@ -1,3 +1,23 @@
+:root
+{
+    --azul-marinho:#1B3E8F;
+    --azul-claro:#33578B;
+}
+
+*{
+    padding: 0px;
+    text-decoration: none;
+    margin: 0px;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
 body {
-    background: radial-gradient(circle at 30% 10%, #1B3E8F 40%, #33578B);
+    background: radial-gradient(circle at 30% 10%, var(--azul-marinho) 40%, var(--azul-claro));
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
