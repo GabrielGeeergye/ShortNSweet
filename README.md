@@ -1,0 +1,1 @@
+Este projeto foca em criar um quiz sobre o álbum ShortNSweet da Sabrina Carpenter, priorizando uma interface intuitiva que facilite a experiência do usuário.
