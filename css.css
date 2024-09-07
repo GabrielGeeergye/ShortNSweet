@@ -1,14 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@font-face 
+{
+    font-family: titulo-principal;
+    src: url("Fonts/fonte-titulo.ttf");
+}
+
 :root
 {
     --azul-marinho:#1B3E8F;
     --azul-claro:#33578B;
+    --branco: #FFF;
+    --vinho: #862720;
+
+    --fonte-titulo: 'titulo-principal', sans-serif;
+    --fonte-subtitulo: "Monsieur La Doulaise", cursive;
+    --fonte-texto:"Quicksand", sans-serif;
 }
+
+
 
 *{
     padding: 0px;
     margin: 0px;
+    border: none;
+    background: none;
     text-decoration: none;
-    justify-content: space-between;
+    
 }
 
 body {
@@ -19,6 +37,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .menu-item
@@ -28,8 +47,86 @@ body {
 
 .menu-butao
 {
-    text-decoration: none;
-    background: none;
-    border: none;
     cursor: pointer;
+}
+
+.titulo-principal
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-titulo);
+    color: var(--branco);
+}
+
+.titulo-principal-detalhe-spotify
+{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-principal-conteudo
+{
+    font-size: 55px;
+}
+
+.titulo-principal-conteudo
+{
+    text-align: center
+}
+
+.sub-titulo-principal
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    font-size: 24px;
+    font-family: var(--fonte-subtitulo);
+}
+
+.conteudo-secundario
+{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-conteudo-secundario
+{
+    display: flex;
+    flex-direction:column-reverse;
+    position:absolute;
+    align-self: flex-end;  
+}
+
+.conteudo-secundario-btn-conectar
+{
+    width: 271px;
+    height: 40px;
+    background-color: var(--vinho); 
+    border-radius: 26px;
+    border:solid 1px;
+    border-color:var(--branco);
+}
+
+.conteudo-secundario-btn-comecar
+{
+    width: 271px;
+    height: 40px;
+    background-color: var(--azul-claro); 
+    border-radius: 26px;
+    border:solid 1px;
+    border-color:var(--branco);
+}
+
+.conteudo-escrito-secundario
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   
+    font-family: var(--fonte-texto);
+    color: var(--branco);
 }
