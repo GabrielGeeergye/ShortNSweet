@@ -30,7 +30,7 @@
 }
 
 body {
-    background: radial-gradient(circle at 30% 10%, var(--azul-marinho) 40%, var(--azul-claro));
+    background: radial-gradient(circle at 50% 50%, var(--azul-claro) 20%, var(--azul-marinho));
 }
 
 .menu{
@@ -99,6 +99,7 @@ body {
     flex-direction:column-reverse;
     position:absolute;
     align-self: flex-end;  
+   
 }
 
 .conteudo-secundario-btn-conectar
@@ -109,6 +110,7 @@ body {
     border-radius: 26px;
     border:solid 1px;
     border-color:var(--branco);
+    cursor: pointer;
 }
 
 .conteudo-secundario-btn-comecar
@@ -119,14 +121,63 @@ body {
     border-radius: 26px;
     border:solid 1px;
     border-color:var(--branco);
+    cursor: pointer;
 }
 
 .conteudo-escrito-secundario
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
-   
     font-family: var(--fonte-texto);
     color: var(--branco);
+}
+
+.conteudo-secundario-imagem
+{
+    margin-top: 20px;
+}
+
+.menu-rodape
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu-rodape-item
+{
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.termos-codicaos
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.termos-codicaos-item
+{
+    padding-left: 10px;
+    cursor: pointer;
+    font-family: var(--fonte-texto);
+    color: var(--branco);
+    font-size: 14px;
+}
+.rodape-simples
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 450px;
+    justify-content: flex-end;
+}
+
+.termos-codicaos
+{
+    margin-right: 800px;
 }
